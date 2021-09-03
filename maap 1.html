@@ -1,0 +1,45 @@
+<html>
+<head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-tofit=no">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script >
+ function inputdata(){
+ var n=document.forms['datapribadi']['nama'].value;
+ var e=document.forms['datapribadi']['email'].value;
+ var p=document.forms['datapribadi']['agama'].value;
+ var a=document.forms['datapribadi']['alamat'].value;
+
+ var tabel = document.getElementById("databel");
+ var baris = tabel.insertRow(1);
+ var kol1 = baris.insertCell(0);
+ var kol2 = baris.insertCell(1);
+ var kol3 = baris.insertCell(2);
+ var kol4 = baris.insertCell(3);
+
+ kol1.innerHTML = n;
+ kol2.innerHTML = e;
+ kol3.innerHTML = p;
+ kol4.innerHTML = a;
+ }
+ </script>
+<title> Aku Minta Maap</title>
+</head>
+<center>
+<font size ="4"> Masukin namanya cantik:</font> 
+<br>
+<table border="1"align ="center"width="300">
+	<tr style="background-color: pink;" align="left">
+	<td>Nama</td>
+	<td> <input type="text" class="form-control" name="nama"
+id="exampleFormControlInput1" placeholder=""></td>
+	</tr>
+	</table>
+	<br>
+ <button type="button" onClick='inputdata()' class="btn btnsuccess"><a href = "maap 2.html">Log IN</a></button>
+</center>
+</body>
+</html>
